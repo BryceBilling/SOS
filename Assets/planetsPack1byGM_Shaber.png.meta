@@ -1,0 +1,630 @@
+fileFormatVersion: 2
+guid: 6c795d1b7ae1e0d4e99a8e4a3a3c2bb7
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: planetsPack1byGM_Shaber_0
+    21300002: planetsPack1byGM_Shaber_1
+    21300004: planetsPack1byGM_Shaber_2
+    21300006: planetsPack1byGM_Shaber_3
+    21300008: planetsPack1byGM_Shaber_4
+    21300010: planetsPack1byGM_Shaber_5
+    21300012: planetsPack1byGM_Shaber_6
+    21300014: planetsPack1byGM_Shaber_7
+    21300016: planetsPack1byGM_Shaber_8
+    21300018: planetsPack1byGM_Shaber_9
+    21300020: planetsPack1byGM_Shaber_10
+    21300022: planetsPack1byGM_Shaber_11
+    21300024: planetsPack1byGM_Shaber_12
+    21300026: planetsPack1byGM_Shaber_13
+    21300028: planetsPack1byGM_Shaber_14
+    21300030: planetsPack1byGM_Shaber_15
+    21300032: planetsPack1byGM_Shaber_16
+    21300034: planetsPack1byGM_Shaber_17
+    21300036: planetsPack1byGM_Shaber_18
+    21300038: planetsPack1byGM_Shaber_19
+    21300040: planetsPack1byGM_Shaber_20
+    21300042: planetsPack1byGM_Shaber_21
+    21300044: planetsPack1byGM_Shaber_22
+    21300046: planetsPack1byGM_Shaber_23
+    21300048: planetsPack1byGM_Shaber_24
+    21300050: planetsPack1byGM_Shaber_25
+    21300052: planetsPack1byGM_Shaber_26
+    21300054: planetsPack1byGM_Shaber_27
+    21300056: planetsPack1byGM_Shaber_28
+    21300058: planetsPack1byGM_Shaber_29
+    21300060: planetsPack1byGM_Shaber_30
+    21300062: planetsPack1byGM_Shaber_31
+    21300064: planetsPack1byGM_Shaber_32
+    21300066: planetsPack1byGM_Shaber_33
+    21300068: planetsPack1byGM_Shaber_34
+    21300070: planetsPack1byGM_Shaber_35
+    21300072: planetsPack1byGM_Shaber_36
+    21300074: planetsPack1byGM_Shaber_37
+    21300076: planetsPack1byGM_Shaber_38
+    21300078: planetsPack1byGM_Shaber_39
+    21300080: planetsPack1byGM_Shaber_40
+    21300082: planetsPack1byGM_Shaber_41
+    21300084: planetsPack1byGM_Shaber_42
+    21300086: planetsPack1byGM_Shaber_43
+    21300088: planetsPack1byGM_Shaber_44
+    21300090: planetsPack1byGM_Shaber_45
+    21300092: planetsPack1byGM_Shaber_46
+    21300094: planetsPack1byGM_Shaber_47
+    21300096: planetsPack1byGM_Shaber_48
+    21300098: planetsPack1byGM_Shaber_49
+    21300100: planetsPack1byGM_Shaber_50
+    21300102: planetsPack1byGM_Shaber_51
+    21300104: planetsPack1byGM_Shaber_52
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: planetsPack1byGM_Shaber_0
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 4032
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_1
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 3143
+        width: 1928
+        height: 961
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_2
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 3143
+        width: 964
+        height: 961
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_3
+      rect:
+        serializedVersion: 2
+        x: 3982
+        y: 3143
+        width: 964
+        height: 961
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_4
+      rect:
+        serializedVersion: 2
+        x: 4987
+        y: 3143
+        width: 971
+        height: 961
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_5
+      rect:
+        serializedVersion: 2
+        x: 5971
+        y: 3143
+        width: 971
+        height: 961
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2138
+        width: 947
+        height: 957
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_7
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 2278
+        width: 811
+        height: 813
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_8
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 2131
+        width: 971
+        height: 964
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_9
+      rect:
+        serializedVersion: 2
+        x: 2977
+        y: 2131
+        width: 971
+        height: 964
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_10
+      rect:
+        serializedVersion: 2
+        x: 3975
+        y: 2131
+        width: 971
+        height: 964
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_11
+      rect:
+        serializedVersion: 2
+        x: 4973
+        y: 2131
+        width: 971
+        height: 964
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_12
+      rect:
+        serializedVersion: 2
+        x: 5971
+        y: 2131
+        width: 971
+        height: 964
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_13
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 2073
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_14
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 1125
+        width: 964
+        height: 965
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_15
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 1118
+        width: 964
+        height: 972
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_16
+      rect:
+        serializedVersion: 2
+        x: 2977
+        y: 1118
+        width: 964
+        height: 972
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_17
+      rect:
+        serializedVersion: 2
+        x: 3968
+        y: 1118
+        width: 971
+        height: 972
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_18
+      rect:
+        serializedVersion: 2
+        x: 4966
+        y: 1118
+        width: 964
+        height: 972
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_19
+      rect:
+        serializedVersion: 2
+        x: 5964
+        y: 1118
+        width: 964
+        height: 972
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1934
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_21
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1375
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_22
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1362
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_23
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1298
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_24
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 1280
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_25
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 1246
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_26
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 1216
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_27
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 99
+        width: 964
+        height: 965
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_28
+      rect:
+        serializedVersion: 2
+        x: 2445
+        y: 1003
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_29
+      rect:
+        serializedVersion: 2
+        x: 2468
+        y: 1006
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_30
+      rect:
+        serializedVersion: 2
+        x: 2519
+        y: 236
+        width: 800
+        height: 828
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_31
+      rect:
+        serializedVersion: 2
+        x: 3579
+        y: 99
+        width: 963
+        height: 965
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_32
+      rect:
+        serializedVersion: 2
+        x: 4765
+        y: 107
+        width: 953
+        height: 957
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_33
+      rect:
+        serializedVersion: 2
+        x: 6081
+        y: 133
+        width: 799
+        height: 931
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_34
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 968
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_35
+      rect:
+        serializedVersion: 2
+        x: 2438
+        y: 955
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_36
+      rect:
+        serializedVersion: 2
+        x: 2455
+        y: 951
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_37
+      rect:
+        serializedVersion: 2
+        x: 2472
+        y: 941
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_38
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 941
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_39
+      rect:
+        serializedVersion: 2
+        x: 2451
+        y: 886
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_40
+      rect:
+        serializedVersion: 2
+        x: 2486
+        y: 873
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_41
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 852
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_42
+      rect:
+        serializedVersion: 2
+        x: 2452
+        y: 825
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_43
+      rect:
+        serializedVersion: 2
+        x: 2431
+        y: 798
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_44
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 667
+        width: 74
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_45
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 578
+        width: 14
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_46
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 599
+        width: 68
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_47
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 551
+        width: 54
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_48
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 510
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_49
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 475
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_50
+      rect:
+        serializedVersion: 2
+        x: 5972
+        y: 284
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_51
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 127
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planetsPack1byGM_Shaber_52
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 140
+        width: 191
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
