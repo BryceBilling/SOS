@@ -13,11 +13,24 @@ public class PlayerMovement : MonoBehaviour {
 	public float coolDown;
 	public float timeStamp;
 	public float health=100;
+	public bool poweredUp;
+	public GameObject explosion;
+	public float count;
 	// Use this for initialization
 	void Start () {
-	
+		poweredUp = false;
+		count = 0.0f;
 	}
-	
+	void Update(){
+		if (poweredUp) {
+			Debug.Log (count);
+			count++;
+			if(count>80){
+				poweredUp=false;
+				count=0;
+			}
+		}
+	}
 	// Update is called once per frame
 	void FixedUpdate () {
 
@@ -39,13 +52,28 @@ public class PlayerMovement : MonoBehaviour {
 		}
 		if(Input.GetKey (KeyCode.Space)){
 
-			if(timeStamp <= Time.time){
+			if(!poweredUp&&timeStamp <= Time.time){
 				Shoot();
+			}
+			else if(poweredUp){
+				Shoot ();
 			}
 		}
 		if (health <= 0) {
+			Explode();
 			Destroy(gameObject);
 		}
+	}
+
+	void Explode(){
+		explosion.GetComponent<Animator> ().speed = 10f;
+		GameObject explode = Instantiate(explosion,transform.position,transform.rotation) as GameObject;
+		Destroy (explode,1.0f);
+		GameOver ();
+	}
+
+	void GameOver(){
+
 	}
 
 	void GenerateTrail(){
@@ -55,10 +83,13 @@ public class PlayerMovement : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D collider)
 	{
-		Debug.Log (collider.name);
 		if(collider.name.Equals ("laserGreen(Clone)")){
 			Destroy(collider.gameObject);
 			health-=collider.transform.GetComponent<Bullet>().damage;
+		}
+		if(collider.name.Equals("powerup")){
+			Destroy(collider.gameObject);
+			poweredUp=true;
 		}
 	}
 

@@ -17,6 +17,8 @@ public class Enemy : MonoBehaviour {
 	public float rotationSpeed;
 	public bool dead;
 	public Sprite destroyed;
+	public GameObject explosion;
+	public GameObject gameController;
 	// Use this for initialization
 	void Start () {
 		Invoke ("ChangeDirection", rotationSpeed);
@@ -34,8 +36,17 @@ public class Enemy : MonoBehaviour {
 			chase=false;
 		}
 		if(health<=0){
-			if(destroyed!=null){
+
+			if(destroyed!=null && !dead){
+				Explode();
+				gameController.GetComponent<GameController>().enemies-=1;
 				gameObject.GetComponent<SpriteRenderer>().sprite=destroyed;
+				dead=true;
+			}else if (!dead){
+				Explode();
+				gameController.GetComponent<GameController>().enemies-=1;
+				dead=true;
+				Destroy(gameObject);
 			}
 			dead=true;
 		}
@@ -44,12 +55,12 @@ public class Enemy : MonoBehaviour {
 
 	// Update is called once per frame
 	void FixedUpdate () {
-		if(player!=null && chase &&Vector3.Distance(transform.position,player.position)>0.5 && transform.name=="enemy" && !dead){
+		if(player!=null && chase &&Vector3.Distance(transform.position,player.position)>0.9 && transform.name=="enemy" && !dead){
 			float direction = Mathf.Atan2((player.position.y-transform.position.y),(player.transform.position.x-transform.position.x)) * Mathf.Rad2Deg - 90;
 			transform.eulerAngles = new Vector3(0,0,direction);
 			rigidbody2D.AddForce(gameObject.transform.up*speed*Time.deltaTime);
 		}
-		else if(player!=null && chase &&Vector3.Distance(transform.position,player.position)>0.5 && transform.name=="Turret_Gun" && !dead){
+		else if(player!=null && chase &&Vector3.Distance(transform.position,player.position)>0.9 && transform.name=="Turret_Gun" && !dead){
 			float direction = Mathf.Atan2((player.position.y-transform.position.y),(player.transform.position.x-transform.position.x)) * Mathf.Rad2Deg;
 			transform.eulerAngles = new Vector3(0,0,direction);
 			rigidbody2D.AddForce(gameObject.transform.up*speed*Time.deltaTime);
@@ -67,6 +78,12 @@ public class Enemy : MonoBehaviour {
 			transform.Rotate (new Vector3 (0, 0, rotationSpeed * Time.deltaTime));
 			rigidbody2D.AddForce (gameObject.transform.up * speed * Time.deltaTime);
 		}
+	}
+
+	void Explode(){
+		explosion.GetComponent<Animator> ().speed = 10f;
+		GameObject explode = Instantiate(explosion,transform.position,transform.rotation) as GameObject;
+		Destroy (explode,1.0f);
 	}
 
 	void OnCollisionEnter2D(Collision2D collider){
