@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour {
 			GenerateTrail();
 		}
 		if (Input.GetKey (KeyCode.S)) {
-			rigidbody2D.AddForce (transform.up * -speed / 2);//Because moving backwards is slower than forwards	
+			rigidbody2D.AddForce (transform.up * -speed);//Because moving backwards is slower than forwards	
 			GenerateTrail();
 		}
 		if(Input.GetKey (KeyCode.Space)){
