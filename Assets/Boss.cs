@@ -26,7 +26,7 @@ public class Boss : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D collider)
 	{
-		if (collider.name.Equals ("laserRed(Clone)")) {
+		if (collider.name.Equals ("laserRed(Clone)") && player.GetComponent<PlayerMovement>().poweredUp) {
 
 			health-=collider.transform.GetComponent<Bullet>().damage;
 		}
@@ -39,4 +39,5 @@ public class Boss : MonoBehaviour {
 		Destroy(explo,2f);
 		GameObject winText = Instantiate(win,player.transform.position,transform.rotation ) as GameObject;
 	}
+	
 }

@@ -13,5 +13,8 @@ public class StartGame : MonoBehaviour {
 		if (Input.GetKey (KeyCode.Return)) {
 			Application.LoadLevel("SOS");
 		}
+		else if(Input.GetKey(KeyCode.Escape)){
+			Application.Quit();
+		}
 	}
 }
