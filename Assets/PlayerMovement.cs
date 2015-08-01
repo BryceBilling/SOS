@@ -16,6 +16,9 @@ public class PlayerMovement : MonoBehaviour {
 	public bool poweredUp;
 	public GameObject explosion;
 	public float count;
+	public GameObject gameOver;
+	public GameObject shield;
+	public AudioClip explosionSound;
 	// Use this for initialization
 	void Start () {
 		poweredUp = false;
@@ -26,6 +29,8 @@ public class PlayerMovement : MonoBehaviour {
 			Debug.Log (count);
 			count++;
 			if(count>80){
+				var shield = transform.Find("shield");
+				shield.GetComponent<SpriteRenderer>().enabled=false;
 				poweredUp=false;
 				count=0;
 			}
@@ -62,38 +67,56 @@ public class PlayerMovement : MonoBehaviour {
 		if (health <= 0) {
 			Explode();
 			Destroy(gameObject);
+			Application.LoadLevel ("GameOver");
 		}
+
 	}
 
 	void Explode(){
+		transform.audio.PlayOneShot (explosionSound);
 		explosion.GetComponent<Animator> ().speed = 10f;
 		GameObject explode = Instantiate(explosion,transform.position,transform.rotation) as GameObject;
 		Destroy (explode,1.0f);
-		GameOver ();
 	}
-
-	void GameOver(){
-
-	}
+	
 
 	void GenerateTrail(){
 		GameObject smoke = Instantiate(smokeTrail,trailPoint.transform.position,transform.rotation) as GameObject;
+		if (health > 60 && !poweredUp) {
+			smoke.GetComponent<SpriteRenderer> ().color = Color.green;
+		}
+		else if (health > 30 && health <= 60 && !poweredUp) {
+			smoke.GetComponent<SpriteRenderer> ().color = Color.yellow;
+		}
+		else if (health > 0 && health <= 30 && !poweredUp) {
+			smoke.GetComponent<SpriteRenderer> ().color = Color.red;
+		}
+		else if(poweredUp){
+			smoke.GetComponent<SpriteRenderer> ().color = Color.blue;
+		}
 		Destroy (smoke, 0.5f);
 	}
 
 	void OnTriggerEnter2D(Collider2D collider)
 	{
-		if(collider.name.Equals ("laserGreen(Clone)")){
+		if(collider.name.Equals ("laserGreen(Clone)") && !poweredUp){
 			Destroy(collider.gameObject);
 			health-=collider.transform.GetComponent<Bullet>().damage;
 		}
 		if(collider.name.Equals("powerup")){
+			var shield = transform.Find("shield");
+			shield.GetComponent<SpriteRenderer>().enabled=true;
 			Destroy(collider.gameObject);
 			poweredUp=true;
+		}
+		if(collider.name.Equals("asteroid(Clone)")){
+			health-=collider.transform.GetComponent<Asteroid>().damage;
+			Destroy(collider.gameObject);
 		}
 	}
 
 	void Shoot(){
+		gameObject.audio.Play ();
 		timeStamp = Time.time + coolDown;
 		GameObject flash = Instantiate(bulletFlash,flashPoint.transform.position,transform.rotation) as GameObject;
 		Destroy (flash,0.05f);

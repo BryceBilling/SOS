@@ -19,6 +19,7 @@ public class Enemy : MonoBehaviour {
 	public Sprite destroyed;
 	public GameObject explosion;
 	public GameObject gameController;
+	public AudioClip explosionSound;
 	// Use this for initialization
 	void Start () {
 		Invoke ("ChangeDirection", rotationSpeed);
@@ -39,7 +40,9 @@ public class Enemy : MonoBehaviour {
 
 			if(destroyed!=null && !dead){
 				Explode();
-				gameController.GetComponent<GameController>().enemies-=1;
+				if(gameController!=null){
+					gameController.GetComponent<GameController>().enemies-=1;
+				}
 				gameObject.GetComponent<SpriteRenderer>().sprite=destroyed;
 				dead=true;
 			}else if (!dead){
@@ -81,8 +84,10 @@ public class Enemy : MonoBehaviour {
 	}
 
 	void Explode(){
+		transform.audio.PlayOneShot (explosionSound);
 		explosion.GetComponent<Animator> ().speed = 10f;
 		GameObject explode = Instantiate(explosion,transform.position,transform.rotation) as GameObject;
+		explode.transform.localScale=new Vector3(1,1,1);
 		Destroy (explode,1.0f);
 	}
 
@@ -103,6 +108,7 @@ public class Enemy : MonoBehaviour {
 	}
 
 	void Shoot(){
+		gameObject.audio.Play ();
 		timeStamp = Time.time + coolDown;
 		GameObject flash = Instantiate(bulletFlash,flashPoint.transform.position,transform.rotation) as GameObject;
 		Destroy (flash,0.05f);
